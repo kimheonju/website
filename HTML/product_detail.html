@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>쇼핑몰</title>
+
+
+    <link rel="stylesheet" type="text/css" href="../CSS/product_detail.css">
+</head>
+
+<body>
+    <body>
+            <div class="header">
+              <div class="logo">
+                <a href="main.html">Standard Shop</a>
+              </div>
+              <div class="menu">
+                <ul>
+                  <li><a href="../HTML/main.html">Home</a></li>
+                  <li id="loginItem"><a href="../HTML/login.html">Login</a></li>
+                  <li id="logoutItem" style="display: none;"><a href="#" onclick="logoutMain()">Logout</a></li>
+                  <li><a href="../HTML/women.html">Women</a></li>
+                  <li><a href="../HTML/men.html">Men</a></li>
+                  <li><a href="../HTML/shopping basket.html">Shopping basket</a></li>
+                  <li><a href="../HTML/service.html">Service</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="sidebar">
+            <h1>Men</h1>
+            <ul>
+              <li><a href="#outerwear">아우터</a></li>
+              <li><a href="#tops">상의</a></li>
+              <li><a href="#bottoms">하의</a></li>
+              <li><a href="#shoes">신발</a></li>
+              <li><a href="#hats">모자</a></li>
+              <li><a href="#accessories">액세서리</a></li>
+            </ul>
+          </div>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide-item">
+                <img id="slideImage2" src="../detail/product_detail1.jpg" alt="Slide 2">
+                <h2>캠퍼스 00s - 크림:블랙 | CAMPUS 00s ALUMIN/CBLACK/ALUMIN</h2>
+                <div class="slide-text">
+                  <h3>Product Info</h3>
+                  <p><strong>브랜드 / 품번:</strong> ADIDAS / HQ8711</p>
+                  <p><strong>시즌 / 성별:</strong> 2023 s/s / 남,여</p>
+                  <h3>Delivery Info</h3>
+                  <p><strong>출고 정보:</strong> 결제 3일 이내 출고</p>
+                  <p><strong>배송 정보:</strong> 국내 배송 / 직배송</p>
+                  <h3>Price Info</h3>
+                  <p><strong>판매가:</strong> 119,000원</p>
+                  <p><strong>회원가:</strong> 105,000원</p>
+
+                  <div class="size-box">
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                      <option value="1">옵션 선택</option>
+                      <option value="2">230</option>
+                      <option value="3">235</option>
+                      <option value="4">240</option>
+                      <option value="5">245</option>
+                      <option value="6">250</option>
+                      <option value="7">255</option>
+                      <option value="8">260</option>
+                      <option value="9">265</option>
+                      <option value="10">270</option>
+                    </select>
+                  </div>
+                  <button class="buy-button">구매하기</button>
+                </div>
+                <div class="product-description">
+                  <h3>정보</h3>
+                  <img src="../detail/information.jpg" alt="detail 1" class="detail-image">
+
+                </div>
+              </div>
+            </div>
+            <script src="../JS/product_detail.js"></script>
+          </div>
+    </body>
+</html>

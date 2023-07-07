@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>쇼핑몰</title>
+
+
+    <link rel="stylesheet" type="text/css" href="../CSS/men.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header-slider-container">
+        <div class="header">
+          <div class="logo">
+            <a href="main.html">Standard Shop</a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="../HTML/main.html">Home</a></li>
+              <li id="loginItem"><a href="../HTML/login.html">Login</a></li>
+              <li id="logoutItem" style="display: none;"><a href="#" onclick="logoutMain()">Logout</a></li>
+              <li><a href="../HTML/women.html">Women</a></li>
+              <li><a href="../HTML/men.html">Men</a></li>
+              <li><a href="../HTML/shopping basket.html">Shopping basket</a></li>
+              <li><a href="../HTML/service.html">Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h1>Men</h1>
+        <ul>
+          <li><a href="#outerwear">아우터</a></li>
+          <li><a href="#tops">상의</a></li>
+          <li><a href="#bottoms">하의</a></li>
+          <li><a href="#shoes">신발</a></li>
+          <li><a href="#hats">모자</a></li>
+          <li><a href="#accessories">액세서리</a></li>
+        </ul>
+      </div>
+    
+      <div class="centered">
+        <form action="/search" method="get">
+          <input type="text" name="query" placeholder="검색어를 입력하세요">
+          <input type="submit" value="검색">
+        </form>
+      </div>
+      <div class="mens">
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">1위</span>
+            <img src="../men_img/outer1.jpg" alt="상품1">
+          </div>
+          <div class="men-info">
+            <h3>[멜란지 마스터]</h3>
+            <h4>스탠다드 후드 스웨트 집업</h4>
+            <p>가격: 49,900원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">2위</span>
+            <img src="../men_img/outer2.jpg" alt="상품2">
+          </div>
+          <div class="men-info">
+            <h3>[라퍼지스토어]</h3>
+            <h4>오리지널 M-1965</h4>
+            <p>가격: 138,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">3위</span>
+            <img src="../men_img/outer3.jpg" alt="상품3">
+          </div>
+          <div class="men-info">
+            <h3>[어반디타입]</h3>
+            <h4>아노락 쓰리피스 풀 셋업</h4>
+            <p>가격: 69,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">4위</span>
+            <img src="../men_img/outer4.jpg" alt="상품4">
+          </div>
+          <div class="men-info">
+            <h3>[스파오]</h3>
+            <h4>라이트 패커블 윈드 브레이커</h4>
+            <p>가격: 39,900원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="xstar">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">5위</span>
+            <img src="../men_img/outer5.jpg" alt="상품5">
+          </div>
+          <div class="men-info">
+            <h3>[엘무드]</h3>
+            <h4>화란 세미오버 가디건</h4>
+            <p>가격: 94,900원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">6위</span>
+            <img src="../men_img/outer6.jpg" alt="상품6">
+          </div>
+          <div class="men-info">
+            <h3>[브랜디드]</h3>
+            <h4>2001 SLOW WORKER DENIM</h4>
+            <p>가격: 103,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="xstar">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">7위</span>
+            <img src="../men_img/outer7.jpg" alt="상품7">
+          </div>
+          <div class="men-info">
+            <h3>[도프제이슨]</h3>
+            <h4>오버핏 비건레더 싱글 자켓</h4>
+            <p>가격: 129,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">8위</span>
+            <img src="../men_img/outer8.jpg" alt="상품8">
+          </div>
+          <div class="men-info">
+            <h3>[스파오]</h3>
+            <h4>배색 윈드브레이커</h4>
+            <p>가격: 59,900원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="xstar">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">9위</span>
+            <img src="../men_img/outer9.jpg" alt="상품9">
+          </div>
+          <div class="men-info">
+            <h3>[모디파이드]</h3>
+            <h4>글렌체크 싱글 블레이져</h4>
+            <p>가격: 135,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">10위</span>
+            <img src="../men_img/outer10.jpg" alt="상품10">
+          </div>
+          <div class="men-info">
+            <h3>[꼼파뇨]</h3>
+            <h4>헤비오버핏 램스울 가디건</h4>
+            <p>가격: 139,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+          <div class="men">
+            <div class="men-image">
+              <span class="ranking">11위</span>
+            <img src="../men_img/outer11.jpg" alt="상품11">
+          </div>
+          <div class="men-info">
+            <h3>[토피]</h3>
+            <h4>2WAY 스웻 후드 집업</h4>
+            <p>가격: 45,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">12위</span>
+            <img src="../men_img/outer12.jpg" alt="상품12">
+          </div>
+          <div class="men-info">
+            <h3>[더블유브이프로젝트]</h3>
+            <h4>와핑 후드집업</h4>
+            <p>가격: 57,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">13위</span>
+            <img src="../men_img/outer13.jpg" alt="상품13">
+          </div>
+          <div class="men-info">
+            <h3>[알파 인더스토리]</h3>
+            <h4>MA-1 레귤러</h4>
+            <p>가격: 279,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">14위</span>
+            <img src="../men_img/outer14.jpg" alt="상품14">
+          </div>
+          <div class="men-info">
+            <h3>[예일]</h3>
+            <h4>WARM + UP OUILTING</h4>
+            <p>가격: 20,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="men">
+          <div class="men-image">
+            <span class="ranking">15위</span>
+            <img src="../men_img/outer15.jpg" alt="상품15">
+          </div>
+          <div class="men-info">
+            <h3>[무신사 스탠다드]</h3>
+            <h4>릴렉스드 베이식 블레이저</h4>
+            <p>가격: 89,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <h3>Standard Shop</h3>
+        <p>컴퓨터공학과 20214076 김헌주</p>
+    </footer>
+    <script src="../JS/men.js"></script>
+  </body>
+  </html>

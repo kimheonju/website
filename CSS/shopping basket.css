@@ -1,0 +1,121 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  padding: 0 20px;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-photo/natural-light-on-a-white-background_53876-123020.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+}
+
+/* logo */
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* menu */
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.shopping-basket {
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.shopping-basket h2 {
+  font-size: 24px;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+
+.shopping-basket table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.shopping-basket th,
+.shopping-basket td {
+  padding: 10px;
+  text-align: center;
+  border: 1px;
+}
+
+.shopping-basket th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.image-container {
+  text-align: bottom;
+  gap: 10px;
+}
+
+.image-container p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.buy-button {
+  margin-top: 50px;
+  padding: 16px 60px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer h3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: 500;
+}

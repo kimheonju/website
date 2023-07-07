@@ -1,0 +1,167 @@
+.header {
+  
+  display: flex;
+  /* 제목과 메뉴를 좌우로 배치 */
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  padding: 0 20px;
+}
+body {
+  background-image: url("https://img.freepik.com/free-photo/natural-light-on-a-white-background_53876-123020.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu ul {
+  display: flex;
+  /* 리스트의 스타일을 없앰 */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  /* 메뉴부분의 밑줄 제거 */
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.slider-container {
+
+  display: flex;
+  align-items: center;
+  height: 70vh;
+}
+
+.slider {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.slide-item {
+  position: relative;
+}
+
+#slideImage {
+  width: 20%; 
+}
+
+.slide-item h2 {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+
+h2 {
+  margin: 30px;
+  padding: 20px;
+}
+
+.products {
+  padding: 20px;
+  margin: 30px;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.product {
+  /* 상품 정렬을 가로로 나열 */
+  display: inline-block;
+  width: calc(20% - 20px);
+  margin: 0 1%;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.product-info {
+  margin-top: 10px;
+  width: 80%;
+  padding: 10px;
+}
+
+.ranking {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.product img {
+  width: 80%;
+  height: 80%;
+  margin-right: 20px;
+}
+
+.product-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.product-info h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+
+.product-info p {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ffd700;
+  margin-right: 5px;
+}
+.xstar {
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 5px;
+}
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer h3{
+  font-size: 15px;
+  font-weight: bold;
+}
+footer p{
+  font-size: 15px;
+  font-weight: 500;
+}

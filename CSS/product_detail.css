@@ -1,0 +1,163 @@
+/* header */
+.header {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #333;
+    color: #fff;
+    padding: 0 20px;
+  }
+  body {
+    background-image: url("https://img.freepik.com/free-photo/natural-light-on-a-white-background_53876-123020.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250vh;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+  .sidebar {
+    width: 10%;
+    float: left;
+    background-color:#f9f9f9;
+    height: 250vh;
+    margin-top: 10px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    margin-top: 10px;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+    font: bold;
+    font-size: 20px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #000;
+  }
+
+
+  .slider-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin-right: 50vh;
+  }
+  
+  .slider {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+  }
+  
+  .slide-item {
+    position: relative; 
+}
+  
+  .slide-item h2 {
+    position: absolute;
+    top: -35px;
+    margin: 0;
+    margin-left: 35%;
+    font-size: 16px;
+  }
+
+  .slide-text {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    padding: 20px;
+    white-space: nowrap;
+    text-align: left;
+
+  }
+  
+  .slide-text h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  
+  .slide-text strong {
+    display: inline-block;
+    width: 100px; 
+  }
+
+
+  .size-box {
+    margin-top: 50px;
+  }
+  
+  .size-box label {
+    margin-right: 30px;
+    font-size: 20px;
+  }
+  
+  .size-box select {
+    padding: 12px 20px;
+  }
+  
+  .buy-button {
+    margin-top: 50px;
+    padding: 16px 60px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .product-description {
+    position: relative;
+    margin-top: 30px;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .product-description h3 {
+    margin-top: 10vh;
+    margin-left: 30vh;
+    font-size: 20px;
+  }
+  
+
+  .detail-image {
+    position: absolute;
+    top: 20vh;
+    left: 35vh;
+    width: 90vh;
+    height: 150Vh;
+}
+

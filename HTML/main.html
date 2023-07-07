@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>쇼핑몰</title>
+
+
+    <link rel="stylesheet" type="text/css" href="../CSS/main.css">
+  </head>
+
+  <body>
+        <div class="header">
+          <div class="logo">
+            <a href="main.html">Standard Shop</a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="../HTML/main.html">Home</a></li>
+              <li id="loginItem"><a href="../HTML/login.html">Login</a></li>
+              <li id="logoutItem" style="display: none;"><a href="#" onclick="logoutMain()">Logout</a></li>
+              <li><a href="../HTML/women.html">Women</a></li>
+              <li><a href="../HTML/men.html">Men</a></li>
+              <li><a href="../HTML/shopping basket.html">Shopping basket</a></li>
+              <li><a href="../HTML/service.html">Service</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide-item">
+              <img id="slideImage" src="img1.jpg" alt="Slide 1">
+              <h2>베스트 상품</h2>
+            </div>
+          </div>
+        </div>
+
+    
+
+    <h2>실시간 랭킹</h2>  
+      <div class="products">
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">1위</span>
+            <img src="../product/product1.jpg" alt="상품1">
+          </div>
+          <div class="product-info">
+            <h3>[아디다스]</h3>
+            <h4>캠퍼스 00s- 크림:블랙</h4>
+            <p>가격: 119,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button onclick="window.location.href='product_detail.html?id=1'">구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">2위</span>
+            <img src="../product/product2.jpg" alt="상품2">
+          </div>
+          <div class="product-info">
+            <h3>[폴로 랄프 로렌]</h3>
+            <h4>커스텀 슬림핏 메시 폴로셔츠 </h4>
+            <p>가격: 169,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="xstar">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">3위</span>
+            <img src="../product/product3.jpg" alt="상품3">
+          </div>
+          <div class="product-info">
+            <h3>[커버낫]</h3>
+            <h4>에센셜 쿨 코튼 2-PACK</h4>
+            <p>가격: 49,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">4위</span>
+            <img src="../product/product4.jpg" alt="상품4">
+          </div>
+          <div class="product-info">
+            <h3>[스톤아아일랜드]</h3>
+            <h4>남성 와펜 패치 후디</h4>
+            <p>가격: 505,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">5위</span>
+            <img src="../product/product5.jpg" alt="상품5">
+          </div>
+          <div class="product-info">
+            <h3>[인템포무드]</h3>
+            <h4>허니비 스트라이프 칼라 니트</h4>
+            <p>가격: 70,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="xstar">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">6위</span>
+            <img src="../product/product6.jpg" alt="상품6">
+          </div>
+          <div class="product-info">
+            <h3>[마리떼]</h3>
+            <h4>W CLASSIC LOGO TEE</h4>
+            <p>가격: 45,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="xstar">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">7위</span>
+            <img src="../product/product7.jpg" alt="상품7">
+          </div>
+          <div class="product-info">
+            <h3>[라라써니사이드]</h3>
+            <h4>폴로 피케 티셔츠</h4>
+            <p>가격: 98,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">8위</span>
+            <img src="../product/product8.jpg" alt="상품8">
+          </div>
+          <div class="product-info">
+            <h3>[허그본]</h3>
+            <h4>무지 머슬핏 반팔 7컬러</h4>
+            <p>가격: 22,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">9위</span>
+            <img src="../product/product9.jpg" alt="상품9">
+          </div>
+          <div class="product-info">
+            <h3>[우포스]</h3>
+            <h4>OORIGINAL BLACK</h4>
+            <p>가격: 69,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">10위</span>
+            <img src="../product/product10.jpg" alt="상품8">
+          </div>
+          <div class="product-info">
+            <h3>[발레시아가]</h3>
+            <h4>여성 미니 쇼핑 폰 홀더 크로스백</h4>
+            <p>가격: 1,120,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">11위</span>
+            <img src="../product/product11.jpg" alt="상품8">
+          </div>
+          <div class="product-info">
+            <h3>[피브비]</h3>
+            <h4>피브비 캐디백</h4>
+            <p>가격: 730,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <span class="ranking">12위</span>
+            <img src="../product/product12.jpg" alt="상품8">
+          </div>
+          <div class="product-info">
+            <h3>[메종 마르지엘라]</h3>
+            <h4>스치티 키링 카드홀더</h4>
+            <p>가격: 449,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <h3>Standard Shop</h3>
+      <p>컴퓨터공학과 20214076 김헌주</p>
+    </footer>
+      <script src="../JS/main.js"></script>
+    </body>
+  </html>

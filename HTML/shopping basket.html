@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>쇼핑몰</title>
+
+
+    <link rel="stylesheet" type="text/css" href="../CSS/shopping basket.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href="../HTML/main.html">Standard Shop</a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="../HTML/main.html">Home</a></li>
+        <li id="loginItem"><a href="../HTML/login.html">Login</a></li>
+        <li id="logoutItem" style="display: none;"><a href="#" onclick="logoutMain()">Logout</a></li>
+        <li><a href="../HTML/women.html">Women</a></li>
+        <li><a href="../HTML/men.html">Men</a></li>
+        <li><a href="../HTML/shopping basket.html">Shopping basket</a></li>
+        <li><a href="../HTML/service.html">Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="shopping-basket">
+    <h2>장바구니 목록</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>상품명</th>
+          <th>옵션</th>
+          <th>판매가</th>
+          <th>회원할인</th>
+          <th>수량</th>
+          <th>주문금액</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="image-container">
+              <img src="../shopping/shopping1.jpg" alt="shopping">
+              <p>[아디다스] 캠퍼스00s</p>
+              <p>크림:블랙/HQ8711</p>
+            </div>
+          </td>
+          <td>260</td>
+          <td>₩119,000</td>
+          <td>₩14,000</td>
+          <td>1</td>
+          <td>₩105,000</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="image-container">
+              <img src="../shopping/shopping2.jpg" alt="shopping">
+              <p>[토앤토] x 로우클래식</p>
+              <p>플립플랍 크림</p>
+            </div>
+          </td>
+          <td>240</td>
+          <td>₩88,000</td>
+          <td>₩8,000</td>
+          <td>1</td>
+          <td>₩80,000</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="image-container">
+              <img src="../shopping/shopping2.jpg" alt="shopping">
+              <p>[토앤토] x 로우클래식</p>
+              <p>플립플랍 크림</p>
+            </div>
+          </td>
+          <td>270</td>
+          <td>₩88,000</td>
+          <td>₩8,000</td>
+          <td>1</td>
+          <td>₩80,000</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="image-container">
+              <img src="../shopping/shopping3.jpg" alt="shopping">
+              <p>[커버낫] 에센셜</p>
+              <p>쿨 코튼 2-PACK</p>
+            </div>
+          </td>
+          <td>L</td>
+          <td>₩49,000</td>
+          <td>₩5,000</td>
+          <td>2</td>
+          <td>₩88,000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <button class="buy-button">구매하기</button>
+  <footer>
+    <h3>Standard Shop</h3>
+    <p>컴퓨터공학과 20214076 김헌주</p>
+  </footer>
+  <script src="../JS/shopping basket.js"></script>
+</body>
+</html>

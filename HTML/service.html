@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>쇼핑몰</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/service.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="../HTML/main.html">Standard Shop</a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="../HTML/main.html">Home</a></li>
+          <li id="loginItem"><a href="../HTML/login.html">Login</a></li>
+          <li id="logoutItem" style="display: none;"><a href="#" onclick="logoutMain()">Logout</a></li>
+          <li><a href="../HTML/women.html">Women</a></li>
+          <li><a href="../HTML/men.html">Men</a></li>
+          <li><a href="../HTML/shopping basket.html">Shopping basket</a></li>
+          <li><a href="../HTML/service.html">Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="sidebar">
+      <h1>고객센터</h1>
+      <ul>
+        <li><a href="#inquiry">문의하기</a></li>
+        <li><a href="#event">이벤트</a></li>
+      </ul>
+    </div>
+    <div class="form-container">
+      <div class="inquiry-form">
+        <form id="inquiry-form">
+          <div class="form-group">
+            <label for="inquiry-type">문의 유형</label>
+            <select id="inquiry-type" name="inquiry-type">
+              <option value="option1">상품 문의</option>
+              <option value="option2">배송 문의</option>
+              <option value="option3">반품 문의</option>
+              <option value="option4">일반 문의</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">아이디</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="message">문의 내용</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+        </form>
+        <button class="passmessage" onclick="submitForm()">보내기</button>
+
+      </div>
+    </div>
+    <script>
+      function submitForm() {
+        // 폼 요소를 가져옴
+        var form = document.getElementById("inquiry-form");
+
+        // 폼 값들을 가져옴
+        var inquiryType = form.elements["inquiry-type"].value;
+        var name = form.elements["name"].value;
+        var email = form.elements["email"].value;
+        var message = form.elements["message"].value;
+
+        // 모든 필드가 채워져 있는지 확인
+        if (inquiryType && name && email && message) {
+          // 성공 메시지를 표시
+          alert("보내기가 완료되었습니다!");
+
+          // 폼을 초기화
+          form.reset();
+        } else {
+          // 오류 메시지를 표시
+          alert("내용을 다시 한 번 확인해주세요.");
+        }
+      }
+
+    </script>
+    <footer>
+      <h3>Standard Shop</h3>
+      <p>컴퓨터공학과 20214076 김헌주</p>
+    </footer>
+    <script src="../JS/service.js"></script>
+  </body>
+</html>

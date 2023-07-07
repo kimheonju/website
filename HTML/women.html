@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>쇼핑몰</title>
+
+
+    <link rel="stylesheet" type="text/css" href="../CSS/women.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header-slider-container">
+        <div class="header">
+          <div class="logo">
+            <a href="../HTML/main.html">Standard Shop</a>
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="../HTML/main.html">Home</a></li>
+              <li id="loginItem"><a href="../HTML/login.html">Login</a></li>
+              <li id="logoutItem" style="display: none;"><a href="#" onclick="logoutMain()">Logout</a></li>
+              <li><a href="../HTML/women.html">Women</a></li>
+              <li><a href="../HTML/men.html">Men</a></li>
+              <li><a href="../HTML/shopping basket.html">Shopping basket</a></li>
+              <li><a href="../HTML/service.html">Service</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <h1>Men</h1>
+        <ul>
+          <li><a href="#womenwear">아우터</a></li>
+          <li><a href="#tops">상의</a></li>
+          <li><a href="#bottoms">하의</a></li>
+          <li><a href="#shoes">신발</a></li>
+          <li><a href="#hats">모자</a></li>
+          <li><a href="#accessories">액세서리</a></li>
+        </ul>
+      </div>
+    
+      <div class="centered">
+        <form action="/search" method="get">
+          <input type="text" name="query" placeholder="검색어를 입력하세요">
+          <input type="submit" value="검색">
+        </form>
+      </div>
+      <div class="womens">
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">1위</span>
+            <img src="../women_img/women1.jpg" alt="상품1">
+          </div>
+          <div class="women-info">
+            <h3>[멜란지 마스터]</h3>
+            <h4>스탠다드 후드 스웨트 집업</h4>
+            <p>가격: 49,900원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">2위</span>
+            <img src="../women_img/women2.jpg" alt="상품2">
+          </div>
+          <div class="women-info">
+            <h3>[라퍼지스토어]</h3>
+            <h4>오리지널 M-1965</h4>
+            <p>가격: 138,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">3위</span>
+            <img src="../women_img/women3.jpg" alt="상품3">
+          </div>
+          <div class="women-info">
+            <h3>[어반디타입]</h3>
+            <h4>아노락 쓰리피스 풀 셋업</h4>
+            <p>가격: 69,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">4위</span>
+            <img src="../women_img/women4.jpg" alt="상품4">
+          </div>
+          <div class="women-info">
+            <h3>[파르티 멘토 우먼]</h3>
+            <h4>시어 셔링 후디 자켓</h4>
+            <p>가격: 79,900원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="xstar">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">5위</span>
+            <img src="../women_img/women5.jpg" alt="상품5">
+          </div>
+          <div class="women-info">
+            <h3>[윈더]</h3>
+            <h4>SEALING SHEER WIND JACKET</h4>
+            <p>가격: 209,900원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">6위</span>
+            <img src="../women_img/women6.jpg" alt="상품6">
+          </div>
+          <div class="women-info">
+            <h3>[반윈 아틀리에]</h3>
+            <h4>O3717 Crop blouson jumper</h4>
+            <p>가격: 137,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="xstar">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">7위</span>
+            <img src="../women_img/women7.jpg" alt="상품7">
+          </div>
+          <div class="women-info">
+            <h3>[무신사 스탠다드]</h3>
+            <h4>우먼즈 라이트웨이트</h4>
+            <p>가격: 79,900원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">8위</span>
+            <img src="../women_img/women8.jpg" alt="상품8">
+          </div>
+          <div class="women-info">
+            <h3>[슬로우 레코드 하우스]</h3>
+            <h4>파이핑 라인 나일론 자켓]</h4>
+            <p>가격: 138,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="xstar">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">9위</span>
+            <img src="../women_img/women9.jpg" alt="상품9">
+          </div>
+          <div class="women-info">
+            <h3>[룩캐스트]</h3>
+            <h4>캐시 린넨 스티치 자켓</h4>
+            <p>가격: 198,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">10위</span>
+            <img src="../women_img/women10.jpg" alt="상품10">
+          </div>
+          <div class="women-info">
+            <h3>[무신사 스탠다스]</h3>
+            <h4>우먼즈 플루이드 블레이저</h4>
+            <p>가격: 79,900원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+          <div class="women">
+            <div class="women-image">
+              <span class="ranking">11위</span>
+            <img src="../women_img/women11.jpg" alt="상품11">
+          </div>
+          <div class="women-info">
+            <h3>[러브이즈트루]</h3>
+            <h4>VL-2-WAY CROP HOOD ZIP UP</h4>
+            <p>가격: 89,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">12위</span>
+            <img src="../women_img/women12.jpg" alt="상품12">
+          </div>
+          <div class="women-info">
+            <h3>[휠라]</h3>
+            <h4>테니스 라이프 바람막이</h4>
+            <p>가격: 139,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">13위</span>
+            <img src="../women_img/women13.jpg" alt="상품13">
+          </div>
+          <div class="women-info">
+            <h3>[쥴리아페페]</h3>
+            <h4>Summer Daily Half Jacket</h4>
+            <p>가격: 79,900원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">14위</span>
+            <img src="../women_img/women14.jpg" alt="상품14">
+          </div>
+          <div class="women-info">
+            <h3>[락케이크]</h3>
+            <h4>글리터 벨벳 크롭 후드 집업</h4>
+            <p>가격: 74,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+        <div class="women">
+          <div class="women-image">
+            <span class="ranking">15위</span>
+            <img src="../women_img/women15.jpg" alt="상품15">
+          </div>
+          <div class="women-info">
+            <h3>[로라 로라]</h3>
+            <h4>CABLE ZIP UP</h4>
+            <p>가격: 75,000원</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <button>구매하기</button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <h3>Standard Shop</h3>
+        <p>컴퓨터공학과 20214076 김헌주</p>
+    </footer>
+    <script src="../JS/women.js"></script>
+    </body>
+  </html>

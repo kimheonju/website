@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <section class="login">
+        <h1>kims Shop</h1>
+        <form>
+            <div class="idpw-input">
+                <input type="text" name="id" id="id" autocomplete="off" required placeholder="아이디" onclick="this.placeholder=''" onblur="this.placeholder='아이디'">
+            </div>
+            <div class="idpw-input">
+                <input type="password" name="pw" id="password" autocomplete="off" required placeholder="비밀번호" onclick="this.placeholder=''" onblur="this.placeholder='비밀번호'">
+            </div>
+            <div class="btn-click">
+                <button type="button" id="btn" onclick="login()" style="color:#fff;">로그인</button>
+            </div>
+        </form>
+        <div class="caption">
+            <a href="join the membership.html">회원이 아니십니까? </a>
+        </div>
+        <div class="caption">
+            <a href="main.html">홈으로 </a>
+        </div>
+    </section>
+    <script src="../JS/login.js"></script>
+    <footer>
+        <h3>Standard Shop</h3>
+        <p>컴퓨터공학과 20214076 김헌주</p>
+    </footer>
+    <div id="login-warning"></div>
+</body>
+</html>

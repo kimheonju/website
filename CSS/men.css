@@ -1,0 +1,199 @@
+.header {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  padding: 0 20px;
+}
+body {
+  background-image: url("https://img.freepik.com/free-photo/natural-light-on-a-white-background_53876-123020.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50PX;
+}
+
+.centered form {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.centered form input[type="text"] {
+  width: 50vh;
+  padding: 15px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.centered form input[type="submit"] {
+  padding: 10px 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mens {
+  
+  margin: 30px;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
+
+.men {
+  display: inline-block;
+  width: 15%;
+  /* 각각의 상품 요소들을 가로로 나열하기 위해 inline-block으로 설정합니다. */
+  margin: 0 1%;
+  /* 왼쪽과 오른쪽에 1%의 마진을 둡니다. */
+  vertical-align: top;
+  /* inline-block 요소들을 상단에 정렬합니다. */
+  margin-bottom: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.men-info {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.men-image {
+  position: relative;
+  display: inline-block;
+}
+
+.men img {
+  width: 120%;
+  margin-right: 20px;
+}
+
+.men-info h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 3px 0;
+}
+
+.men-info h4 {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 5px 0;
+}
+.men-info p {
+  margin: 5px 0;
+}
+
+.ranking {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  font-size: 20px;
+  color: #ffd700;
+  margin-right: 5px;
+}
+.xstar {
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+.sidebar {
+  width: 10%;
+  float: left;
+  background-color:#f9f9f9;
+  height: 110vh;
+  margin-top: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  margin-top: 10px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  font: bold;
+  font-size: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer h3{
+  font-size: 15px;
+  font-weight: bold;
+}
+footer p{
+  font-size: 15px;
+  font-weight: 500;
+}
